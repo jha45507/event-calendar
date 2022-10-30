@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Calendar</title>
+</head>
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title text-light" id="exampleModalLabel">Meeting schedulers </h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form_reset">
+                        <div class="form_contener mt-0">
+                            <label for="exampleFormControlInput1" class="form-label p-0 m-0 text-primary">Event
+                                title</label>
+                            <input type="text" placeholder="Event title" class="form-control p-0 m-0 " id="event_title">
+                        </div>
+                        <div class=" form_contener mt-3">
+                            <label for="exampleFormControlInput1" class="form-label p-0 m-0 text-primary">Start
+                                date</label>
+                            <input type="date" class="form-control p-0 m-0" id="event_start_date">
+                        </div>
+                        <div class="form_contener mt-3">
+                            <label for="exampleFormControlInput1" class="form-label p-0 m-0 text-primary">Meeting
+                                time</label>
+                            <input type="time" class="form-control p-0 m-0" id="event_time">
+                        </div>
+                        <div class="form_contener mt-3">
+                            <label for="exampleFormControlInput1" class="form-label p-0 m-0 text-primary">End
+                                date</label>
+                            <input type="date" class="form-control p-0 m-0" id="event_end_date">
+                        </div>
+                        <input class="btn btn-primary submitbtn mt-3" type="button" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='calendar'></div>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
